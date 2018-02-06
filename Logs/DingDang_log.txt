@@ -1,0 +1,477 @@
+﻿[2018-02-02 15:33:45,048] DESKTOP-MDN0R8O/DEBUG/root: Get_BidAndInnId函数...
+[2018-02-02 15:33:45,051] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:33:45,142] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/login HTTP/1.1" 200 None
+[2018-02-02 15:33:45,144] DESKTOP-MDN0R8O/DEBUG/root: 开始判断StatusCode ...
+[2018-02-02 15:33:45,144] DESKTOP-MDN0R8O/DEBUG/root: StatusCode正确，返回值为:0
+[2018-02-02 15:33:45,145] DESKTOP-MDN0R8O/DEBUG/root: 成功
+[2018-02-02 15:33:45,145] DESKTOP-MDN0R8O/DEBUG/root: 开始请求登录接口...
+[2018-02-02 15:33:45,148] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:33:45,365] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/stat2/allInn?bid=33486f51fc162bcbc1beabea6ea8d056 HTTP/1.1" 200 None
+[2018-02-02 15:33:45,516] DESKTOP-MDN0R8O/DEBUG/root: Get_BidAndInnId函数...
+[2018-02-02 15:33:45,517] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:33:45,605] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/login HTTP/1.1" 200 None
+[2018-02-02 15:33:45,605] DESKTOP-MDN0R8O/DEBUG/root: 开始判断StatusCode ...
+[2018-02-02 15:33:45,605] DESKTOP-MDN0R8O/DEBUG/root: StatusCode正确，返回值为:0
+[2018-02-02 15:33:45,607] DESKTOP-MDN0R8O/DEBUG/root: 成功
+[2018-02-02 15:33:45,607] DESKTOP-MDN0R8O/DEBUG/root: 开始请求登录接口...
+[2018-02-02 15:33:45,608] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:33:45,838] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/stat2/allInn?bid=301927abc94c8acd5860b115df8fb726 HTTP/1.1" 200 None
+[2018-02-02 15:33:47,691] DESKTOP-MDN0R8O/DEBUG/root: 存在以下innId:[4033, 4002, 4034, 4003, 4005, 4006, 3687, 4039, 3688, 4104, 3689, 4105, 4106, 3693, 3662, 3663, 4111, 3696, 4112, 3699, 4119]
+[2018-02-02 15:33:47,691] DESKTOP-MDN0R8O/DEBUG/root: 此时随机取到的innId为:4034
+[2018-02-02 15:33:47,691] DESKTOP-MDN0R8O/DEBUG/root: 开始请求获取roomId的接口...
+[2018-02-02 15:33:47,693] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:33:47,793] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "GET /api/v1/pms/api/room/getByInnId/4034?bid=301927abc94c8acd5860b115df8fb726 HTTP/1.1" 200 None
+[2018-02-02 15:33:47,795] DESKTOP-MDN0R8O/DEBUG/root: 开始判断innId为4034时roomId是否为空...
+[2018-02-02 15:33:47,795] DESKTOP-MDN0R8O/DEBUG/root: 当innId为4034时，此时满足roomId不为空
+[2018-02-02 15:33:47,795] DESKTOP-MDN0R8O/DEBUG/root: 当前取得到的RoomId为:7123
+[2018-02-02 15:33:47,796] DESKTOP-MDN0R8O/INFO/locust.main: Starting web monitor at *:8089
+[2018-02-02 15:33:47,796] DESKTOP-MDN0R8O/INFO/locust.main: Starting Locust 0.8.1
+[2018-02-02 15:34:48,905] DESKTOP-MDN0R8O/INFO/locust.runners: Hatching and swarming 1 clients at the rate 1 clients/s...
+[2018-02-02 15:34:48,907] DESKTOP-MDN0R8O/DEBUG/root: 请求提交的参数为:{'checkonDate': '20081201', 'roomId': 7123, 'innId': 4104}
+[2018-02-02 15:34:48,907] DESKTOP-MDN0R8O/DEBUG/root: 开始请求app获取可创建订单类型的接口...
+[2018-02-02 15:34:48,907] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:34:49,005] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/order/getAvailableOrderType?bid=33486f51fc162bcbc1beabea6ea8d056 HTTP/1.1" 200 None
+[2018-02-02 15:34:49,907] DESKTOP-MDN0R8O/INFO/locust.runners: All locusts hatched: MyUser: 1
+[2018-02-02 15:34:50,407] DESKTOP-MDN0R8O/DEBUG/root: 请求提交的参数为:{'checkonDate': '20081201', 'roomId': 7123, 'innId': 4104}
+[2018-02-02 15:34:50,407] DESKTOP-MDN0R8O/DEBUG/root: 开始请求app获取可创建订单类型的接口...
+[2018-02-02 15:34:50,480] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/order/getAvailableOrderType?bid=33486f51fc162bcbc1beabea6ea8d056 HTTP/1.1" 200 None
+[2018-02-02 15:35:09,744] DESKTOP-MDN0R8O/ERROR/stderr: KeyboardInterrupt
+[2018-02-02 15:35:09,744] DESKTOP-MDN0R8O/ERROR/stderr: Fri Feb 02 15:35:09 2018
+[2018-02-02 15:35:09,746] DESKTOP-MDN0R8O/ERROR/stderr: 
+[2018-02-02 15:35:09,746] DESKTOP-MDN0R8O/INFO/locust.main: Shutting down (exit code 0), bye.
+[2018-02-02 15:35:09,753] DESKTOP-MDN0R8O/ERROR/stderr: Traceback (most recent call last):
+[2018-02-02 15:35:09,753] DESKTOP-MDN0R8O/ERROR/stderr: File "C:\Python27\lib\logging\__init__.py", line 882, in emit
+[2018-02-02 15:35:09,756] DESKTOP-MDN0R8O/ERROR/stderr: stream.write(fs % msg)
+[2018-02-02 15:35:09,756] DESKTOP-MDN0R8O/ERROR/stderr: IOError: [Errno 0] Error
+[2018-02-02 15:35:09,756] DESKTOP-MDN0R8O/ERROR/stderr: Logged from file stats.py, line 629
+[2018-02-02 15:35:28,601] DESKTOP-MDN0R8O/DEBUG/root: Get_BidAndInnId函数...
+[2018-02-02 15:35:28,605] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:35:28,696] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/login HTTP/1.1" 200 None
+[2018-02-02 15:35:28,697] DESKTOP-MDN0R8O/DEBUG/root: 开始判断StatusCode ...
+[2018-02-02 15:35:28,697] DESKTOP-MDN0R8O/DEBUG/root: StatusCode正确，返回值为:0
+[2018-02-02 15:35:28,697] DESKTOP-MDN0R8O/DEBUG/root: 成功
+[2018-02-02 15:35:28,697] DESKTOP-MDN0R8O/DEBUG/root: 开始请求登录接口...
+[2018-02-02 15:35:28,697] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:35:28,911] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/stat2/allInn?bid=e368e44115dbd348641a5ac2f0b6bf31 HTTP/1.1" 200 None
+[2018-02-02 15:35:29,377] DESKTOP-MDN0R8O/INFO/locust.main: Starting web monitor at *:8089
+[2018-02-02 15:35:29,377] DESKTOP-MDN0R8O/INFO/locust.main: Starting Locust 0.8.1
+[2018-02-02 15:40:24,289] DESKTOP-MDN0R8O/INFO/locust.runners: Hatching and swarming 1 clients at the rate 1 clients/s...
+[2018-02-02 15:40:24,289] DESKTOP-MDN0R8O/DEBUG/root: 开始请求获取活动信息的接口...
+[2018-02-02 15:40:24,290] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:40:24,387] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "GET /api/v1/pms/api/helpCenter/getAdList?bid=e368e44115dbd348641a5ac2f0b6bf31 HTTP/1.1" 200 None
+[2018-02-02 15:40:25,289] DESKTOP-MDN0R8O/INFO/locust.runners: All locusts hatched: MyUser: 1
+[2018-02-02 15:40:29,085] DESKTOP-MDN0R8O/DEBUG/root: 开始请求获取活动信息的接口...
+[2018-02-02 15:40:29,142] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "GET /api/v1/pms/api/helpCenter/getAdList?bid=e368e44115dbd348641a5ac2f0b6bf31 HTTP/1.1" 200 None
+[2018-02-02 15:41:35,298] DESKTOP-MDN0R8O/ERROR/stderr: KeyboardInterrupt
+[2018-02-02 15:41:35,298] DESKTOP-MDN0R8O/ERROR/stderr: Fri Feb 02 15:41:35 2018
+[2018-02-02 15:41:35,298] DESKTOP-MDN0R8O/ERROR/stderr: 
+[2018-02-02 15:41:35,298] DESKTOP-MDN0R8O/INFO/locust.main: Shutting down (exit code 0), bye.
+[2018-02-02 15:41:57,779] DESKTOP-MDN0R8O/DEBUG/root: Get_BidAndInnId函数...
+[2018-02-02 15:41:57,782] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:41:57,920] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/login HTTP/1.1" 200 None
+[2018-02-02 15:41:57,921] DESKTOP-MDN0R8O/DEBUG/root: 开始判断StatusCode ...
+[2018-02-02 15:41:57,921] DESKTOP-MDN0R8O/DEBUG/root: StatusCode正确，返回值为:0
+[2018-02-02 15:41:57,921] DESKTOP-MDN0R8O/DEBUG/root: 成功
+[2018-02-02 15:41:57,921] DESKTOP-MDN0R8O/DEBUG/root: 开始请求登录接口...
+[2018-02-02 15:41:57,924] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:41:58,197] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/stat2/allInn?bid=3c35ad1614ebeaaaa3d73e32dc3c6b5f HTTP/1.1" 200 None
+[2018-02-02 15:41:59,796] DESKTOP-MDN0R8O/INFO/locust.main: Starting web monitor at *:8089
+[2018-02-02 15:41:59,796] DESKTOP-MDN0R8O/INFO/locust.main: Starting Locust 0.8.1
+[2018-02-02 15:42:35,907] DESKTOP-MDN0R8O/INFO/locust.runners: Hatching and swarming 1 clients at the rate 1 clients/s...
+[2018-02-02 15:42:35,907] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'start': '20000301', 'innId': 3699}
+[2018-02-02 15:42:35,907] DESKTOP-MDN0R8O/DEBUG/root: 开始请求单日的房态信息的接口...
+[2018-02-02 15:42:35,908] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:42:35,999] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/order/getDayInnInfo?bid=3c35ad1614ebeaaaa3d73e32dc3c6b5f HTTP/1.1" 200 None
+[2018-02-02 15:42:36,908] DESKTOP-MDN0R8O/INFO/locust.runners: All locusts hatched: MyUser: 1
+[2018-02-02 15:42:37,414] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'start': '20000301', 'innId': 3699}
+[2018-02-02 15:42:37,414] DESKTOP-MDN0R8O/DEBUG/root: 开始请求单日的房态信息的接口...
+[2018-02-02 15:42:37,482] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/order/getDayInnInfo?bid=3c35ad1614ebeaaaa3d73e32dc3c6b5f HTTP/1.1" 200 None
+[2018-02-02 15:42:46,176] DESKTOP-MDN0R8O/ERROR/stderr: KeyboardInterrupt
+[2018-02-02 15:42:46,176] DESKTOP-MDN0R8O/ERROR/stderr: Fri Feb 02 15:42:46 2018
+[2018-02-02 15:42:46,177] DESKTOP-MDN0R8O/ERROR/stderr: 
+[2018-02-02 15:42:46,177] DESKTOP-MDN0R8O/INFO/locust.main: Shutting down (exit code 0), bye.
+[2018-02-02 15:44:49,036] DESKTOP-MDN0R8O/DEBUG/root: Get_BidAndInnId函数...
+[2018-02-02 15:44:49,039] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:44:49,134] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/login HTTP/1.1" 200 None
+[2018-02-02 15:44:49,135] DESKTOP-MDN0R8O/DEBUG/root: 开始判断StatusCode ...
+[2018-02-02 15:44:49,137] DESKTOP-MDN0R8O/DEBUG/root: StatusCode正确，返回值为:0
+[2018-02-02 15:44:49,137] DESKTOP-MDN0R8O/DEBUG/root: 成功
+[2018-02-02 15:44:49,137] DESKTOP-MDN0R8O/DEBUG/root: 开始请求登录接口...
+[2018-02-02 15:44:49,141] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:44:49,638] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/stat2/allInn?bid=1363b88cb65ace5617c05e242240e628 HTTP/1.1" 200 None
+[2018-02-02 15:44:49,980] DESKTOP-MDN0R8O/INFO/locust.main: Starting web monitor at *:8089
+[2018-02-02 15:44:49,980] DESKTOP-MDN0R8O/INFO/locust.main: Starting Locust 0.8.1
+[2018-02-02 15:45:41,270] DESKTOP-MDN0R8O/INFO/locust.runners: Hatching and swarming 1 clients at the rate 1 clients/s...
+[2018-02-02 15:45:41,272] DESKTOP-MDN0R8O/DEBUG/root: 开始请求获取客栈列表的接口...
+[2018-02-02 15:45:41,272] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:45:41,355] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "GET /api/v1/pms/api/inn/get?bid=1363b88cb65ace5617c05e242240e628&innId=4105 HTTP/1.1" 200 None
+[2018-02-02 15:45:42,270] DESKTOP-MDN0R8O/INFO/locust.runners: All locusts hatched: MyUser: 1
+[2018-02-02 15:45:42,404] DESKTOP-MDN0R8O/DEBUG/root: 开始请求获取客栈列表的接口...
+[2018-02-02 15:45:42,460] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "GET /api/v1/pms/api/inn/get?bid=1363b88cb65ace5617c05e242240e628&innId=4105 HTTP/1.1" 200 None
+[2018-02-02 15:46:11,114] DESKTOP-MDN0R8O/ERROR/stderr: KeyboardInterrupt
+[2018-02-02 15:46:11,114] DESKTOP-MDN0R8O/ERROR/stderr: Fri Feb 02 15:46:11 2018
+[2018-02-02 15:46:11,115] DESKTOP-MDN0R8O/ERROR/stderr: 
+[2018-02-02 15:46:11,115] DESKTOP-MDN0R8O/INFO/locust.main: Shutting down (exit code 0), bye.
+[2018-02-02 15:47:21,048] DESKTOP-MDN0R8O/DEBUG/root: Get_BidAndInnId函数...
+[2018-02-02 15:47:21,058] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:47:21,148] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/login HTTP/1.1" 200 None
+[2018-02-02 15:47:21,150] DESKTOP-MDN0R8O/DEBUG/root: 开始判断StatusCode ...
+[2018-02-02 15:47:21,150] DESKTOP-MDN0R8O/DEBUG/root: StatusCode正确，返回值为:0
+[2018-02-02 15:47:21,151] DESKTOP-MDN0R8O/DEBUG/root: 成功
+[2018-02-02 15:47:21,151] DESKTOP-MDN0R8O/DEBUG/root: 开始请求登录接口...
+[2018-02-02 15:47:21,153] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:47:21,367] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/stat2/allInn?bid=f63ec3263618dd1d502666852486d598 HTTP/1.1" 200 None
+[2018-02-02 15:47:22,529] DESKTOP-MDN0R8O/DEBUG/root: 进入Get_OrderId方法...
+[2018-02-02 15:47:22,529] DESKTOP-MDN0R8O/DEBUG/root: Get_BidAndInnId函数...
+[2018-02-02 15:47:22,530] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:47:22,617] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/login HTTP/1.1" 200 None
+[2018-02-02 15:47:22,617] DESKTOP-MDN0R8O/DEBUG/root: 开始判断StatusCode ...
+[2018-02-02 15:47:22,617] DESKTOP-MDN0R8O/DEBUG/root: StatusCode正确，返回值为:0
+[2018-02-02 15:47:22,617] DESKTOP-MDN0R8O/DEBUG/root: 成功
+[2018-02-02 15:47:22,618] DESKTOP-MDN0R8O/DEBUG/root: 开始请求登录接口...
+[2018-02-02 15:47:22,618] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:47:22,813] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/stat2/allInn?bid=e004618d0ca932cb4e25cdaf373b06e8 HTTP/1.1" 200 None
+[2018-02-02 15:47:23,207] DESKTOP-MDN0R8O/DEBUG/root: 存在以下innId:[4033, 4002, 4034, 4003, 4005, 4006, 3687, 4039, 3688, 4104, 3689, 4105, 4106, 3693, 3662, 3663, 4111, 3696, 4112, 3699, 4119]
+[2018-02-02 15:47:23,207] DESKTOP-MDN0R8O/DEBUG/root: 接口请求参数为:{'startDate': '20030801', 'dateType': 1, 'endDate': '20130501', 'innId': 3696}
+[2018-02-02 15:47:23,207] DESKTOP-MDN0R8O/DEBUG/root: 开始请求获取OrderId的接口...
+[2018-02-02 15:47:23,210] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:47:23,299] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/order/query?bid=e004618d0ca932cb4e25cdaf373b06e8 HTTP/1.1" 200 None
+[2018-02-02 15:47:23,302] DESKTOP-MDN0R8O/DEBUG/root: 接口请求参数为:{'startDate': '20011001', 'dateType': 1, 'endDate': '20050201', 'innId': 4005}
+[2018-02-02 15:47:23,302] DESKTOP-MDN0R8O/DEBUG/root: 开始请求获取OrderId的接口...
+[2018-02-02 15:47:23,303] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:47:23,394] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/order/query?bid=e004618d0ca932cb4e25cdaf373b06e8 HTTP/1.1" 200 None
+[2018-02-02 15:47:23,395] DESKTOP-MDN0R8O/DEBUG/root: 接口请求参数为:{'startDate': '19990601', 'dateType': 1, 'endDate': '20010101', 'innId': 4106}
+[2018-02-02 15:47:23,395] DESKTOP-MDN0R8O/DEBUG/root: 开始请求获取OrderId的接口...
+[2018-02-02 15:47:23,398] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:47:23,486] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/order/query?bid=e004618d0ca932cb4e25cdaf373b06e8 HTTP/1.1" 200 None
+[2018-02-02 15:47:23,487] DESKTOP-MDN0R8O/DEBUG/root: 接口请求参数为:{'startDate': '20021201', 'dateType': 1, 'endDate': '20060201', 'innId': 3688}
+[2018-02-02 15:47:23,489] DESKTOP-MDN0R8O/DEBUG/root: 开始请求获取OrderId的接口...
+[2018-02-02 15:47:23,490] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:47:23,578] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/order/query?bid=e004618d0ca932cb4e25cdaf373b06e8 HTTP/1.1" 200 None
+[2018-02-02 15:47:23,579] DESKTOP-MDN0R8O/DEBUG/root: 接口请求参数为:{'startDate': '20070801', 'dateType': 1, 'endDate': '20131001', 'innId': 4119}
+[2018-02-02 15:47:23,581] DESKTOP-MDN0R8O/DEBUG/root: 开始请求获取OrderId的接口...
+[2018-02-02 15:47:23,582] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:47:23,671] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/order/query?bid=e004618d0ca932cb4e25cdaf373b06e8 HTTP/1.1" 200 None
+[2018-02-02 15:47:23,686] DESKTOP-MDN0R8O/DEBUG/root: 接口请求参数为:{'startDate': '20000201', 'dateType': 1, 'endDate': '20110701', 'innId': 4034}
+[2018-02-02 15:47:23,686] DESKTOP-MDN0R8O/DEBUG/root: 开始请求获取OrderId的接口...
+[2018-02-02 15:47:23,687] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:47:23,779] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/order/query?bid=e004618d0ca932cb4e25cdaf373b06e8 HTTP/1.1" 200 None
+[2018-02-02 15:47:23,779] DESKTOP-MDN0R8O/DEBUG/root: 接口请求参数为:{'startDate': '20020101', 'dateType': 1, 'endDate': '20100501', 'innId': 4002}
+[2018-02-02 15:47:23,779] DESKTOP-MDN0R8O/DEBUG/root: 开始请求获取OrderId的接口...
+[2018-02-02 15:47:23,780] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:47:23,871] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/order/query?bid=e004618d0ca932cb4e25cdaf373b06e8 HTTP/1.1" 200 None
+[2018-02-02 15:47:23,871] DESKTOP-MDN0R8O/DEBUG/root: 接口请求参数为:{'startDate': '20011201', 'dateType': 1, 'endDate': '20140501', 'innId': 3663}
+[2018-02-02 15:47:23,871] DESKTOP-MDN0R8O/DEBUG/root: 开始请求获取OrderId的接口...
+[2018-02-02 15:47:23,872] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:47:23,960] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/order/query?bid=e004618d0ca932cb4e25cdaf373b06e8 HTTP/1.1" 200 None
+[2018-02-02 15:47:23,961] DESKTOP-MDN0R8O/DEBUG/root: 接口请求参数为:{'startDate': '20000801', 'dateType': 1, 'endDate': '20150801', 'innId': 3699}
+[2018-02-02 15:47:23,961] DESKTOP-MDN0R8O/DEBUG/root: 开始请求获取OrderId的接口...
+[2018-02-02 15:47:23,963] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:47:24,052] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/order/query?bid=e004618d0ca932cb4e25cdaf373b06e8 HTTP/1.1" 200 None
+[2018-02-02 15:47:24,053] DESKTOP-MDN0R8O/DEBUG/root: 接口请求参数为:{'startDate': '20061101', 'dateType': 1, 'endDate': '20100201', 'innId': 3696}
+[2018-02-02 15:47:24,053] DESKTOP-MDN0R8O/DEBUG/root: 开始请求获取OrderId的接口...
+[2018-02-02 15:47:24,055] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:47:27,144] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/order/query?bid=e004618d0ca932cb4e25cdaf373b06e8 HTTP/1.1" 200 None
+[2018-02-02 15:47:27,148] DESKTOP-MDN0R8O/DEBUG/root: 接口请求参数为:{'startDate': '20061001', 'dateType': 1, 'endDate': '20110601', 'innId': 3699}
+[2018-02-02 15:47:27,148] DESKTOP-MDN0R8O/DEBUG/root: 开始请求获取OrderId的接口...
+[2018-02-02 15:47:27,151] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:47:27,247] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/order/query?bid=e004618d0ca932cb4e25cdaf373b06e8 HTTP/1.1" 200 None
+[2018-02-02 15:47:27,250] DESKTOP-MDN0R8O/DEBUG/root: 接口请求参数为:{'startDate': '20081201', 'dateType': 1, 'endDate': '20120701', 'innId': 3688}
+[2018-02-02 15:47:27,250] DESKTOP-MDN0R8O/DEBUG/root: 开始请求获取OrderId的接口...
+[2018-02-02 15:47:27,252] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:47:27,348] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/order/query?bid=e004618d0ca932cb4e25cdaf373b06e8 HTTP/1.1" 200 None
+[2018-02-02 15:47:27,348] DESKTOP-MDN0R8O/DEBUG/root: 接口请求参数为:{'startDate': '20020201', 'dateType': 1, 'endDate': '20050301', 'innId': 3699}
+[2018-02-02 15:47:27,348] DESKTOP-MDN0R8O/DEBUG/root: 开始请求获取OrderId的接口...
+[2018-02-02 15:47:27,349] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:47:27,444] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/order/query?bid=e004618d0ca932cb4e25cdaf373b06e8 HTTP/1.1" 200 None
+[2018-02-02 15:47:27,447] DESKTOP-MDN0R8O/DEBUG/root: 接口请求参数为:{'startDate': '20020101', 'dateType': 1, 'endDate': '20151101', 'innId': 4104}
+[2018-02-02 15:47:27,447] DESKTOP-MDN0R8O/DEBUG/root: 开始请求获取OrderId的接口...
+[2018-02-02 15:47:27,450] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:47:27,573] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/order/query?bid=e004618d0ca932cb4e25cdaf373b06e8 HTTP/1.1" 200 None
+[2018-02-02 15:47:27,575] DESKTOP-MDN0R8O/DEBUG/root: 接口请求参数为:{'startDate': '20081201', 'dateType': 1, 'endDate': '20170101', 'innId': 4005}
+[2018-02-02 15:47:27,576] DESKTOP-MDN0R8O/DEBUG/root: 开始请求获取OrderId的接口...
+[2018-02-02 15:47:27,581] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:47:27,673] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/order/query?bid=e004618d0ca932cb4e25cdaf373b06e8 HTTP/1.1" 200 None
+[2018-02-02 15:47:27,676] DESKTOP-MDN0R8O/DEBUG/root: 接口请求参数为:{'startDate': '20021001', 'dateType': 1, 'endDate': '20120701', 'innId': 3663}
+[2018-02-02 15:47:27,676] DESKTOP-MDN0R8O/DEBUG/root: 开始请求获取OrderId的接口...
+[2018-02-02 15:47:27,680] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:47:27,770] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/order/query?bid=e004618d0ca932cb4e25cdaf373b06e8 HTTP/1.1" 200 None
+[2018-02-02 15:47:27,773] DESKTOP-MDN0R8O/DEBUG/root: 接口请求参数为:{'startDate': '20000701', 'dateType': 1, 'endDate': '20170701', 'innId': 4111}
+[2018-02-02 15:47:27,773] DESKTOP-MDN0R8O/DEBUG/root: 开始请求获取OrderId的接口...
+[2018-02-02 15:47:27,778] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:47:27,868] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/order/query?bid=e004618d0ca932cb4e25cdaf373b06e8 HTTP/1.1" 200 None
+[2018-02-02 15:47:27,871] DESKTOP-MDN0R8O/DEBUG/root: 接口请求参数为:{'startDate': '20010501', 'dateType': 1, 'endDate': '20180901', 'innId': 3663}
+[2018-02-02 15:47:27,871] DESKTOP-MDN0R8O/DEBUG/root: 开始请求获取OrderId的接口...
+[2018-02-02 15:47:27,875] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:47:27,994] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/order/query?bid=e004618d0ca932cb4e25cdaf373b06e8 HTTP/1.1" 200 None
+[2018-02-02 15:47:28,026] DESKTOP-MDN0R8O/DEBUG/root: 当innId为3663时，此时满足roomId不为空
+[2018-02-02 15:47:28,028] DESKTOP-MDN0R8O/DEBUG/root: 当前取得到的orderId为:21528
+[2018-02-02 15:47:28,028] DESKTOP-MDN0R8O/INFO/stdout: 2
+[2018-02-02 15:47:28,028] DESKTOP-MDN0R8O/INFO/stdout: 
+[2018-02-02 15:47:28,029] DESKTOP-MDN0R8O/INFO/locust.main: Starting web monitor at *:8089
+[2018-02-02 15:47:28,029] DESKTOP-MDN0R8O/INFO/locust.main: Starting Locust 0.8.1
+[2018-02-02 15:48:18,825] DESKTOP-MDN0R8O/INFO/locust.runners: Hatching and swarming 1 clients at the rate 1 clients/s...
+[2018-02-02 15:48:18,825] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'orderId': 21528, 'from': 2}
+[2018-02-02 15:48:18,825] DESKTOP-MDN0R8O/DEBUG/root: 开始请求查询多张订单的接口...
+[2018-02-02 15:48:18,826] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:48:18,944] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/order/multi?bid=f63ec3263618dd1d502666852486d598 HTTP/1.1" 200 None
+[2018-02-02 15:48:19,825] DESKTOP-MDN0R8O/INFO/locust.runners: All locusts hatched: MyUser: 1
+[2018-02-02 15:48:23,529] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'orderId': 21528, 'from': 2}
+[2018-02-02 15:48:23,529] DESKTOP-MDN0R8O/DEBUG/root: 开始请求查询多张订单的接口...
+[2018-02-02 15:48:23,589] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/order/multi?bid=f63ec3263618dd1d502666852486d598 HTTP/1.1" 200 None
+[2018-02-02 15:48:26,526] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'orderId': 21528, 'from': 2}
+[2018-02-02 15:48:26,526] DESKTOP-MDN0R8O/DEBUG/root: 开始请求查询多张订单的接口...
+[2018-02-02 15:48:26,588] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/order/multi?bid=f63ec3263618dd1d502666852486d598 HTTP/1.1" 200 None
+[2018-02-02 15:48:46,628] DESKTOP-MDN0R8O/ERROR/stderr: KeyboardInterrupt
+[2018-02-02 15:48:46,630] DESKTOP-MDN0R8O/ERROR/stderr: Fri Feb 02 15:48:46 2018
+[2018-02-02 15:48:46,630] DESKTOP-MDN0R8O/ERROR/stderr: 
+[2018-02-02 15:48:46,630] DESKTOP-MDN0R8O/INFO/locust.main: Shutting down (exit code 0), bye.
+[2018-02-02 15:49:17,062] DESKTOP-MDN0R8O/DEBUG/root: Get_BidAndInnId函数...
+[2018-02-02 15:49:17,066] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:49:17,157] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/login HTTP/1.1" 200 None
+[2018-02-02 15:49:17,157] DESKTOP-MDN0R8O/DEBUG/root: 开始判断StatusCode ...
+[2018-02-02 15:49:17,158] DESKTOP-MDN0R8O/DEBUG/root: StatusCode正确，返回值为:0
+[2018-02-02 15:49:17,158] DESKTOP-MDN0R8O/DEBUG/root: 成功
+[2018-02-02 15:49:17,158] DESKTOP-MDN0R8O/DEBUG/root: 开始请求登录接口...
+[2018-02-02 15:49:17,161] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:49:17,375] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/stat2/allInn?bid=a5b9f93722a9583f790fc7844b1a6f39 HTTP/1.1" 200 None
+[2018-02-02 15:49:19,467] DESKTOP-MDN0R8O/INFO/locust.main: Starting web monitor at *:8089
+[2018-02-02 15:49:19,467] DESKTOP-MDN0R8O/INFO/locust.main: Starting Locust 0.8.1
+[2018-02-02 15:49:47,986] DESKTOP-MDN0R8O/INFO/locust.runners: Hatching and swarming 1 clients at the rate 1 clients/s...
+[2018-02-02 15:49:47,986] DESKTOP-MDN0R8O/DEBUG/root: 开始请求获取房型与房间列表的接口...
+[2018-02-02 15:49:47,987] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:49:48,085] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "GET /api/v1/pms/api/room/getByInnId/4002?bid=a5b9f93722a9583f790fc7844b1a6f39 HTTP/1.1" 200 None
+[2018-02-02 15:49:48,987] DESKTOP-MDN0R8O/INFO/locust.runners: All locusts hatched: MyUser: 1
+[2018-02-02 15:49:50,552] DESKTOP-MDN0R8O/DEBUG/root: 开始请求获取房型与房间列表的接口...
+[2018-02-02 15:49:50,627] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "GET /api/v1/pms/api/room/getByInnId/4002?bid=a5b9f93722a9583f790fc7844b1a6f39 HTTP/1.1" 200 None
+[2018-02-02 15:49:57,055] DESKTOP-MDN0R8O/ERROR/stderr: KeyboardInterrupt
+[2018-02-02 15:49:57,055] DESKTOP-MDN0R8O/ERROR/stderr: Fri Feb 02 15:49:57 2018
+[2018-02-02 15:49:57,055] DESKTOP-MDN0R8O/ERROR/stderr: 
+[2018-02-02 15:49:57,055] DESKTOP-MDN0R8O/INFO/locust.main: Shutting down (exit code 0), bye.
+[2018-02-02 15:50:25,194] DESKTOP-MDN0R8O/DEBUG/root: Get_BidAndInnId函数...
+[2018-02-02 15:50:25,197] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:50:25,285] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/login HTTP/1.1" 200 None
+[2018-02-02 15:50:25,286] DESKTOP-MDN0R8O/DEBUG/root: 开始判断StatusCode ...
+[2018-02-02 15:50:25,286] DESKTOP-MDN0R8O/DEBUG/root: StatusCode正确，返回值为:0
+[2018-02-02 15:50:25,286] DESKTOP-MDN0R8O/DEBUG/root: 成功
+[2018-02-02 15:50:25,286] DESKTOP-MDN0R8O/DEBUG/root: 开始请求登录接口...
+[2018-02-02 15:50:25,289] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:50:25,496] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/stat2/allInn?bid=7629da2e56148a34757cdf040b71ae37 HTTP/1.1" 200 None
+[2018-02-02 15:50:27,484] DESKTOP-MDN0R8O/INFO/locust.main: Starting web monitor at *:8089
+[2018-02-02 15:50:27,484] DESKTOP-MDN0R8O/INFO/locust.main: Starting Locust 0.8.1
+[2018-02-02 15:50:41,148] DESKTOP-MDN0R8O/INFO/locust.runners: Hatching and swarming 1 clients at the rate 1 clients/s...
+[2018-02-02 15:50:41,148] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'start': '20040201', 'days': 192, 'innId': 4119}
+[2018-02-02 15:50:41,148] DESKTOP-MDN0R8O/DEBUG/root: 开始请求获取房态盘信息的接口...
+[2018-02-02 15:50:41,148] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:50:41,230] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/order/getInnInfo?bid=7629da2e56148a34757cdf040b71ae37 HTTP/1.1" 200 None
+[2018-02-02 15:50:42,148] DESKTOP-MDN0R8O/INFO/locust.runners: All locusts hatched: MyUser: 1
+[2018-02-02 15:50:44,190] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'start': '20040201', 'days': 192, 'innId': 4119}
+[2018-02-02 15:50:44,190] DESKTOP-MDN0R8O/DEBUG/root: 开始请求获取房态盘信息的接口...
+[2018-02-02 15:50:44,246] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/order/getInnInfo?bid=7629da2e56148a34757cdf040b71ae37 HTTP/1.1" 200 None
+[2018-02-02 15:54:25,891] DESKTOP-MDN0R8O/ERROR/stderr: KeyboardInterrupt
+[2018-02-02 15:54:25,892] DESKTOP-MDN0R8O/ERROR/stderr: Fri Feb 02 15:54:25 2018
+[2018-02-02 15:54:25,892] DESKTOP-MDN0R8O/ERROR/stderr: 
+[2018-02-02 15:54:25,892] DESKTOP-MDN0R8O/INFO/locust.main: Shutting down (exit code 0), bye.
+[2018-02-02 15:54:25,907] DESKTOP-MDN0R8O/ERROR/stderr: Traceback (most recent call last):
+[2018-02-02 15:54:25,908] DESKTOP-MDN0R8O/ERROR/stderr: File "C:\Python27\lib\logging\__init__.py", line 882, in emit
+[2018-02-02 15:54:25,911] DESKTOP-MDN0R8O/ERROR/stderr: stream.write(fs % msg)
+[2018-02-02 15:54:25,911] DESKTOP-MDN0R8O/ERROR/stderr: IOError: [Errno 0] Error
+[2018-02-02 15:54:25,911] DESKTOP-MDN0R8O/ERROR/stderr: Logged from file stats.py, line 634
+[2018-02-02 15:54:52,434] DESKTOP-MDN0R8O/DEBUG/root: Get_BidAndInnId函数...
+[2018-02-02 15:54:52,437] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:54:52,542] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/login HTTP/1.1" 200 None
+[2018-02-02 15:54:52,545] DESKTOP-MDN0R8O/DEBUG/root: 开始判断StatusCode ...
+[2018-02-02 15:54:52,545] DESKTOP-MDN0R8O/DEBUG/root: StatusCode正确，返回值为:0
+[2018-02-02 15:54:52,545] DESKTOP-MDN0R8O/DEBUG/root: 成功
+[2018-02-02 15:54:52,546] DESKTOP-MDN0R8O/DEBUG/root: 开始请求登录接口...
+[2018-02-02 15:54:52,549] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:54:52,798] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/stat2/allInn?bid=35f5986cc7369c64b360c924db3fa151 HTTP/1.1" 200 None
+[2018-02-02 15:54:56,032] DESKTOP-MDN0R8O/INFO/locust.main: Starting web monitor at *:8089
+[2018-02-02 15:54:56,032] DESKTOP-MDN0R8O/INFO/locust.main: Starting Locust 0.8.1
+[2018-02-02 15:55:38,753] DESKTOP-MDN0R8O/INFO/locust.runners: Hatching and swarming 1 clients at the rate 1 clients/s...
+[2018-02-02 15:55:38,753] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'token': u'35f5986cc7369c64b360c924db3fa151', 'uid': '18201458971'}
+[2018-02-02 15:55:38,753] DESKTOP-MDN0R8O/DEBUG/root: 开始请求推送用户验证的接口...
+[2018-02-02 15:55:38,753] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-02 15:55:38,819] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/push/valid HTTP/1.1" 200 None
+[2018-02-02 15:55:39,753] DESKTOP-MDN0R8O/INFO/locust.runners: All locusts hatched: MyUser: 1
+[2018-02-02 15:55:40,740] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'token': u'35f5986cc7369c64b360c924db3fa151', 'uid': '18201458971'}
+[2018-02-02 15:55:40,740] DESKTOP-MDN0R8O/DEBUG/root: 开始请求推送用户验证的接口...
+[2018-02-02 15:55:40,783] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/push/valid HTTP/1.1" 200 None
+[2018-02-02 15:55:45,627] DESKTOP-MDN0R8O/ERROR/stderr: KeyboardInterrupt
+[2018-02-02 15:55:45,627] DESKTOP-MDN0R8O/ERROR/stderr: Fri Feb 02 15:55:45 2018
+[2018-02-02 15:55:45,628] DESKTOP-MDN0R8O/ERROR/stderr: 
+[2018-02-02 15:55:45,628] DESKTOP-MDN0R8O/INFO/locust.main: Shutting down (exit code 0), bye.
+[2018-02-05 13:27:12,466] DESKTOP-MDN0R8O/DEBUG/root: Get_BidAndInnId函数...
+[2018-02-05 13:27:12,484] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-05 13:27:12,598] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/login HTTP/1.1" 200 None
+[2018-02-05 13:27:12,599] DESKTOP-MDN0R8O/DEBUG/root: 开始判断StatusCode ...
+[2018-02-05 13:27:12,601] DESKTOP-MDN0R8O/DEBUG/root: StatusCode正确，返回值为:0
+[2018-02-05 13:27:12,601] DESKTOP-MDN0R8O/DEBUG/root: 成功
+[2018-02-05 13:27:12,601] DESKTOP-MDN0R8O/DEBUG/root: 开始请求登录接口...
+[2018-02-05 13:27:12,604] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-05 13:27:12,966] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/stat2/allInn?bid=5735610af7e6c3690b5fd3c65b29ddaf HTTP/1.1" 200 None
+[2018-02-05 13:27:30,108] DESKTOP-MDN0R8O/INFO/locust.main: Starting web monitor at *:8089
+[2018-02-05 13:27:30,108] DESKTOP-MDN0R8O/INFO/locust.main: Starting Locust 0.8.1
+[2018-02-05 13:27:43,424] DESKTOP-MDN0R8O/ERROR/stderr: KeyboardInterrupt
+[2018-02-05 13:27:43,424] DESKTOP-MDN0R8O/ERROR/stderr: Mon Feb 05 13:27:43 2018
+[2018-02-05 13:27:43,424] DESKTOP-MDN0R8O/ERROR/stderr: 
+[2018-02-05 13:27:43,424] DESKTOP-MDN0R8O/INFO/locust.main: Shutting down (exit code 0), bye.
+[2018-02-05 13:28:10,825] DESKTOP-MDN0R8O/DEBUG/root: Get_BidAndInnId函数...
+[2018-02-05 13:28:10,828] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-05 13:28:10,913] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/login HTTP/1.1" 200 None
+[2018-02-05 13:28:10,914] DESKTOP-MDN0R8O/DEBUG/root: 开始判断StatusCode ...
+[2018-02-05 13:28:10,914] DESKTOP-MDN0R8O/DEBUG/root: StatusCode正确，返回值为:0
+[2018-02-05 13:28:10,914] DESKTOP-MDN0R8O/DEBUG/root: 成功
+[2018-02-05 13:28:10,914] DESKTOP-MDN0R8O/DEBUG/root: 开始请求登录接口...
+[2018-02-05 13:28:10,917] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-05 13:28:11,163] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/stat2/allInn?bid=b3e775a15f4950d2d610d660dbe1540c HTTP/1.1" 200 None
+[2018-02-05 13:28:23,723] DESKTOP-MDN0R8O/INFO/locust.main: Starting web monitor at *:8089
+[2018-02-05 13:28:23,723] DESKTOP-MDN0R8O/INFO/locust.main: Starting Locust 0.8.1
+[2018-02-05 13:29:10,595] DESKTOP-MDN0R8O/ERROR/stderr: KeyboardInterrupt
+[2018-02-05 13:29:10,595] DESKTOP-MDN0R8O/ERROR/stderr: Mon Feb 05 13:29:10 2018
+[2018-02-05 13:29:10,595] DESKTOP-MDN0R8O/ERROR/stderr: 
+[2018-02-05 13:29:10,595] DESKTOP-MDN0R8O/INFO/locust.main: Shutting down (exit code 0), bye.
+[2018-02-05 13:29:42,188] DESKTOP-MDN0R8O/DEBUG/root: Get_BidAndInnId函数...
+[2018-02-05 13:29:42,193] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-05 13:29:43,283] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/login HTTP/1.1" 200 None
+[2018-02-05 13:29:43,286] DESKTOP-MDN0R8O/DEBUG/root: 开始判断StatusCode ...
+[2018-02-05 13:29:43,286] DESKTOP-MDN0R8O/DEBUG/root: StatusCode正确，返回值为:0
+[2018-02-05 13:29:43,286] DESKTOP-MDN0R8O/DEBUG/root: 成功
+[2018-02-05 13:29:43,288] DESKTOP-MDN0R8O/DEBUG/root: 开始请求登录接口...
+[2018-02-05 13:29:43,289] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-05 13:29:43,572] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/stat2/allInn?bid=b94563caacdf8dbc717664d578c0b815 HTTP/1.1" 200 None
+[2018-02-05 13:29:45,691] DESKTOP-MDN0R8O/INFO/locust.main: Starting web monitor at *:8089
+[2018-02-05 13:29:45,693] DESKTOP-MDN0R8O/INFO/locust.main: Starting Locust 0.8.1
+[2018-02-05 13:30:13,801] DESKTOP-MDN0R8O/ERROR/stderr: Traceback (most recent call last):
+[2018-02-05 13:30:13,801] DESKTOP-MDN0R8O/ERROR/stderr: File "C:\Python27\lib\site-packages\gevent-1.2.2-py2.7-win-amd64.egg\gevent\greenlet.py", line 536, in run
+[2018-02-05 13:30:13,801] DESKTOP-MDN0R8O/ERROR/stderr: result = self._run(*self.args, **self.kwargs)
+[2018-02-05 13:30:13,801] DESKTOP-MDN0R8O/ERROR/stderr: File "C:\Python27\lib\site-packages\locustio-0.8.1-py2.7.egg\locust\stats.py", line 661, in stats_writer
+[2018-02-05 13:30:13,801] DESKTOP-MDN0R8O/ERROR/stderr: write_stat_csvs(base_filepath)
+[2018-02-05 13:30:13,801] DESKTOP-MDN0R8O/ERROR/stderr: File "C:\Python27\lib\site-packages\locustio-0.8.1-py2.7.egg\locust\stats.py", line 670, in write_stat_csvs
+[2018-02-05 13:30:13,802] DESKTOP-MDN0R8O/ERROR/stderr: with open(base_filepath + '_distribution.csv', 'w') as f:
+[2018-02-05 13:30:13,802] DESKTOP-MDN0R8O/ERROR/stderr: IOError: [Errno 13] Permission denied: '../Results/_distribution.csv'
+[2018-02-05 13:30:13,802] DESKTOP-MDN0R8O/ERROR/stderr: Mon Feb 05 13:30:13 2018
+[2018-02-05 13:30:13,802] DESKTOP-MDN0R8O/ERROR/stderr: 
+[2018-02-05 13:30:13,802] DESKTOP-MDN0R8O/ERROR/stderr: <Greenlet at 0x52a79c8L: stats_writer('../Results/')> failed with IOError
+[2018-02-05 13:30:50,990] DESKTOP-MDN0R8O/INFO/locust.runners: Hatching and swarming 1 clients at the rate 1 clients/s...
+[2018-02-05 13:30:50,990] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'token': u'b94563caacdf8dbc717664d578c0b815', 'uid': '18201458971'}
+[2018-02-05 13:30:50,990] DESKTOP-MDN0R8O/DEBUG/root: 开始请求推送用户验证的接口...
+[2018-02-05 13:30:50,992] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-05 13:30:51,058] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/push/valid HTTP/1.1" 200 None
+[2018-02-05 13:30:51,992] DESKTOP-MDN0R8O/INFO/locust.runners: All locusts hatched: MyUser: 1
+[2018-02-05 13:30:55,364] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'token': u'b94563caacdf8dbc717664d578c0b815', 'uid': '18201458971'}
+[2018-02-05 13:30:55,364] DESKTOP-MDN0R8O/DEBUG/root: 开始请求推送用户验证的接口...
+[2018-02-05 13:30:55,401] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/push/valid HTTP/1.1" 200 None
+[2018-02-05 13:30:57,157] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'token': u'b94563caacdf8dbc717664d578c0b815', 'uid': '18201458971'}
+[2018-02-05 13:30:57,157] DESKTOP-MDN0R8O/DEBUG/root: 开始请求推送用户验证的接口...
+[2018-02-05 13:30:57,197] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/push/valid HTTP/1.1" 200 None
+[2018-02-05 13:31:00,497] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'token': u'b94563caacdf8dbc717664d578c0b815', 'uid': '18201458971'}
+[2018-02-05 13:31:00,497] DESKTOP-MDN0R8O/DEBUG/root: 开始请求推送用户验证的接口...
+[2018-02-05 13:31:00,536] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/push/valid HTTP/1.1" 200 None
+[2018-02-05 13:31:02,924] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'token': u'b94563caacdf8dbc717664d578c0b815', 'uid': '18201458971'}
+[2018-02-05 13:31:02,924] DESKTOP-MDN0R8O/DEBUG/root: 开始请求推送用户验证的接口...
+[2018-02-05 13:31:02,966] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/push/valid HTTP/1.1" 200 None
+[2018-02-05 13:33:10,174] DESKTOP-MDN0R8O/ERROR/stderr: KeyboardInterrupt
+[2018-02-05 13:33:10,174] DESKTOP-MDN0R8O/ERROR/stderr: Mon Feb 05 13:33:10 2018
+[2018-02-05 13:33:10,174] DESKTOP-MDN0R8O/ERROR/stderr: 
+[2018-02-05 13:33:10,174] DESKTOP-MDN0R8O/INFO/locust.main: Shutting down (exit code 0), bye.
+[2018-02-05 13:33:10,180] DESKTOP-MDN0R8O/ERROR/stderr: Traceback (most recent call last):
+[2018-02-05 13:33:10,180] DESKTOP-MDN0R8O/ERROR/stderr: File "C:\Python27\lib\logging\__init__.py", line 882, in emit
+[2018-02-05 13:33:10,181] DESKTOP-MDN0R8O/ERROR/stderr: stream.write(fs % msg)
+[2018-02-05 13:33:10,183] DESKTOP-MDN0R8O/ERROR/stderr: IOError: [Errno 0] Error
+[2018-02-05 13:33:10,183] DESKTOP-MDN0R8O/ERROR/stderr: Logged from file stats.py, line 616
+[2018-02-05 13:33:30,381] DESKTOP-MDN0R8O/DEBUG/root: Get_BidAndInnId函数...
+[2018-02-05 13:33:30,384] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-05 13:33:30,700] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/login HTTP/1.1" 200 None
+[2018-02-05 13:33:30,700] DESKTOP-MDN0R8O/DEBUG/root: 开始判断StatusCode ...
+[2018-02-05 13:33:30,700] DESKTOP-MDN0R8O/DEBUG/root: StatusCode正确，返回值为:0
+[2018-02-05 13:33:30,700] DESKTOP-MDN0R8O/DEBUG/root: 成功
+[2018-02-05 13:33:30,700] DESKTOP-MDN0R8O/DEBUG/root: 开始请求登录接口...
+[2018-02-05 13:33:30,701] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-05 13:33:30,918] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/stat2/allInn?bid=3222aa0de7a2604dfcc7eb9b996d352b HTTP/1.1" 200 None
+[2018-02-05 13:33:30,923] DESKTOP-MDN0R8O/INFO/locust.main: Starting Locust 0.8.1
+[2018-02-05 13:33:30,923] DESKTOP-MDN0R8O/INFO/locust.runners: Hatching and swarming 1 clients at the rate 1 clients/s...
+[2018-02-05 13:33:30,928] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'token': u'3222aa0de7a2604dfcc7eb9b996d352b', 'uid': '18201458971'}
+[2018-02-05 13:33:30,930] DESKTOP-MDN0R8O/DEBUG/root: 开始请求推送用户验证的接口...
+[2018-02-05 13:33:30,931] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-05 13:33:30,997] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/push/valid HTTP/1.1" 200 None
+[2018-02-05 13:33:31,923] DESKTOP-MDN0R8O/INFO/locust.runners: All locusts hatched: MyUser: 1
+[2018-02-05 13:33:32,096] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'token': u'3222aa0de7a2604dfcc7eb9b996d352b', 'uid': '18201458971'}
+[2018-02-05 13:33:32,096] DESKTOP-MDN0R8O/DEBUG/root: 开始请求推送用户验证的接口...
+[2018-02-05 13:33:32,132] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/push/valid HTTP/1.1" 200 None
+[2018-02-05 13:33:34,105] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'token': u'3222aa0de7a2604dfcc7eb9b996d352b', 'uid': '18201458971'}
+[2018-02-05 13:33:34,105] DESKTOP-MDN0R8O/DEBUG/root: 开始请求推送用户验证的接口...
+[2018-02-05 13:33:34,385] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/push/valid HTTP/1.1" 200 None
+[2018-02-05 13:33:36,223] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'token': u'3222aa0de7a2604dfcc7eb9b996d352b', 'uid': '18201458971'}
+[2018-02-05 13:33:36,223] DESKTOP-MDN0R8O/DEBUG/root: 开始请求推送用户验证的接口...
+[2018-02-05 13:33:36,266] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/push/valid HTTP/1.1" 200 None
+[2018-02-05 13:33:40,197] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'token': u'3222aa0de7a2604dfcc7eb9b996d352b', 'uid': '18201458971'}
+[2018-02-05 13:33:40,197] DESKTOP-MDN0R8O/DEBUG/root: 开始请求推送用户验证的接口...
+[2018-02-05 13:33:40,236] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/push/valid HTTP/1.1" 200 None
+[2018-02-05 13:33:44,950] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'token': u'3222aa0de7a2604dfcc7eb9b996d352b', 'uid': '18201458971'}
+[2018-02-05 13:33:44,950] DESKTOP-MDN0R8O/DEBUG/root: 开始请求推送用户验证的接口...
+[2018-02-05 13:33:44,992] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/push/valid HTTP/1.1" 200 None
+[2018-02-05 13:33:46,871] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'token': u'3222aa0de7a2604dfcc7eb9b996d352b', 'uid': '18201458971'}
+[2018-02-05 13:33:46,871] DESKTOP-MDN0R8O/DEBUG/root: 开始请求推送用户验证的接口...
+[2018-02-05 13:33:46,911] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/push/valid HTTP/1.1" 200 None
+[2018-02-05 13:33:48,269] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'token': u'3222aa0de7a2604dfcc7eb9b996d352b', 'uid': '18201458971'}
+[2018-02-05 13:33:48,269] DESKTOP-MDN0R8O/DEBUG/root: 开始请求推送用户验证的接口...
+[2018-02-05 13:33:48,309] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/push/valid HTTP/1.1" 200 None
+[2018-02-05 13:33:48,986] DESKTOP-MDN0R8O/ERROR/stderr: KeyboardInterrupt
+[2018-02-05 13:33:48,986] DESKTOP-MDN0R8O/ERROR/stderr: Mon Feb 05 13:33:48 2018
+[2018-02-05 13:33:48,987] DESKTOP-MDN0R8O/ERROR/stderr: 
+[2018-02-05 13:33:48,987] DESKTOP-MDN0R8O/INFO/locust.main: Shutting down (exit code 0), bye.
+[2018-02-05 14:16:37,081] DESKTOP-MDN0R8O/DEBUG/root: Get_BidAndInnId函数...
+[2018-02-05 14:16:37,084] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-05 14:16:37,173] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/login HTTP/1.1" 200 None
+[2018-02-05 14:16:37,174] DESKTOP-MDN0R8O/DEBUG/root: 开始判断StatusCode ...
+[2018-02-05 14:16:37,174] DESKTOP-MDN0R8O/DEBUG/root: StatusCode正确，返回值为:0
+[2018-02-05 14:16:37,174] DESKTOP-MDN0R8O/DEBUG/root: 成功
+[2018-02-05 14:16:37,174] DESKTOP-MDN0R8O/DEBUG/root: 开始请求登录接口...
+[2018-02-05 14:16:37,174] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-05 14:16:37,684] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/api/stat2/allInn?bid=d16cc127bd6ca4c0bd8a25b5ecb6676c HTTP/1.1" 200 None
+[2018-02-05 14:17:01,345] DESKTOP-MDN0R8O/INFO/locust.main: Starting Locust 0.8.1
+[2018-02-05 14:17:01,345] DESKTOP-MDN0R8O/INFO/locust.runners: Hatching and swarming 1 clients at the rate 1 clients/s...
+[2018-02-05 14:17:01,351] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'token': u'd16cc127bd6ca4c0bd8a25b5ecb6676c', 'uid': '18201458971'}
+[2018-02-05 14:17:01,351] DESKTOP-MDN0R8O/DEBUG/root: 开始请求推送用户验证的接口...
+[2018-02-05 14:17:01,352] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 10.32.231.205
+[2018-02-05 14:17:01,418] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/push/valid HTTP/1.1" 200 None
+[2018-02-05 14:17:02,345] DESKTOP-MDN0R8O/INFO/locust.runners: All locusts hatched: MyUser: 1
+[2018-02-05 14:17:05,357] DESKTOP-MDN0R8O/ERROR/stderr: Traceback (most recent call last):
+[2018-02-05 14:17:05,357] DESKTOP-MDN0R8O/ERROR/stderr: File "C:\Python27\lib\logging\__init__.py", line 882, in emit
+[2018-02-05 14:17:05,358] DESKTOP-MDN0R8O/ERROR/stderr: stream.write(fs % msg)
+[2018-02-05 14:17:05,359] DESKTOP-MDN0R8O/ERROR/stderr: IOError: [Errno 0] Error
+[2018-02-05 14:17:05,359] DESKTOP-MDN0R8O/ERROR/stderr: Logged from file stats.py, line 615
+[2018-02-05 14:17:05,526] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'token': u'd16cc127bd6ca4c0bd8a25b5ecb6676c', 'uid': '18201458971'}
+[2018-02-05 14:17:05,526] DESKTOP-MDN0R8O/DEBUG/root: 开始请求推送用户验证的接口...
+[2018-02-05 14:17:05,568] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/push/valid HTTP/1.1" 200 None
+[2018-02-05 14:17:08,266] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'token': u'd16cc127bd6ca4c0bd8a25b5ecb6676c', 'uid': '18201458971'}
+[2018-02-05 14:17:08,266] DESKTOP-MDN0R8O/DEBUG/root: 开始请求推送用户验证的接口...
+[2018-02-05 14:17:08,313] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/push/valid HTTP/1.1" 200 None
+[2018-02-05 14:17:11,887] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'token': u'd16cc127bd6ca4c0bd8a25b5ecb6676c', 'uid': '18201458971'}
+[2018-02-05 14:17:11,887] DESKTOP-MDN0R8O/DEBUG/root: 开始请求推送用户验证的接口...
+[2018-02-05 14:17:11,927] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/push/valid HTTP/1.1" 200 None
+[2018-02-05 14:17:13,496] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'token': u'd16cc127bd6ca4c0bd8a25b5ecb6676c', 'uid': '18201458971'}
+[2018-02-05 14:17:13,496] DESKTOP-MDN0R8O/DEBUG/root: 开始请求推送用户验证的接口...
+[2018-02-05 14:17:13,539] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/push/valid HTTP/1.1" 200 None
+[2018-02-05 14:17:16,532] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'token': u'd16cc127bd6ca4c0bd8a25b5ecb6676c', 'uid': '18201458971'}
+[2018-02-05 14:17:16,532] DESKTOP-MDN0R8O/DEBUG/root: 开始请求推送用户验证的接口...
+[2018-02-05 14:17:16,573] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/push/valid HTTP/1.1" 200 None
+[2018-02-05 14:17:20,961] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'token': u'd16cc127bd6ca4c0bd8a25b5ecb6676c', 'uid': '18201458971'}
+[2018-02-05 14:17:20,961] DESKTOP-MDN0R8O/DEBUG/root: 开始请求推送用户验证的接口...
+[2018-02-05 14:17:21,005] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/push/valid HTTP/1.1" 200 None
+[2018-02-05 14:17:22,907] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'token': u'd16cc127bd6ca4c0bd8a25b5ecb6676c', 'uid': '18201458971'}
+[2018-02-05 14:17:22,907] DESKTOP-MDN0R8O/DEBUG/root: 开始请求推送用户验证的接口...
+[2018-02-05 14:17:22,950] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/push/valid HTTP/1.1" 200 None
+[2018-02-05 14:17:26,305] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'token': u'd16cc127bd6ca4c0bd8a25b5ecb6676c', 'uid': '18201458971'}
+[2018-02-05 14:17:26,305] DESKTOP-MDN0R8O/DEBUG/root: 开始请求推送用户验证的接口...
+[2018-02-05 14:17:26,344] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/push/valid HTTP/1.1" 200 None
+[2018-02-05 14:17:27,846] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'token': u'd16cc127bd6ca4c0bd8a25b5ecb6676c', 'uid': '18201458971'}
+[2018-02-05 14:17:27,846] DESKTOP-MDN0R8O/DEBUG/root: 开始请求推送用户验证的接口...
+[2018-02-05 14:17:27,887] DESKTOP-MDN0R8O/DEBUG/urllib3.connectionpool: http://10.32.231.205:8080 "POST /api/v1/pms/push/valid HTTP/1.1" 200 None
+[2018-02-05 14:17:29,033] DESKTOP-MDN0R8O/DEBUG/root: 请求的参数为:{'token': u'd16cc127bd6ca4c0bd8a25b5ecb6676c', 'uid': '18201458971'}
+[2018-02-05 14:17:29,033] DESKTOP-MDN0R8O/DEBUG/root: 开始请求推送用户验证的接口...
+[2018-02-05 14:17:29,071] DESKTOP-MDN0R8O/ERROR/stderr: KeyboardInterrupt
+[2018-02-05 14:17:29,071] DESKTOP-MDN0R8O/ERROR/stderr: Mon Feb 05 14:17:29 2018
+[2018-02-05 14:17:29,071] DESKTOP-MDN0R8O/ERROR/stderr: 
+[2018-02-05 14:17:29,071] DESKTOP-MDN0R8O/INFO/locust.main: Shutting down (exit code 0), bye.

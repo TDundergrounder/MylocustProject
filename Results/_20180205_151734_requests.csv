@@ -1,0 +1,3 @@
+"Method","Name","# requests","# failures","Median response time","Average response time","Min response time","Max response time","Average Content Size","Requests/s"
+"GET","/api/v1/pms/api/helpCenter/getAdList?bid=7b32a3272fa8fc8d2425316e8af6502f",6,0,76,112,51,319,568,2.48
+"None","Total",6,0,76,112,51,319,568,2.48
